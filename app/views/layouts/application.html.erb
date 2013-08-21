@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= @title %> - AngularJS Modules, Plugins and Directives</title>
+  <title><%= @title %> - Appcelerator Titanium Resources</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
-  <link href="<%= atom_path %>" type="application/atom+xml" rel="alternate" title="Latest AngularJS Modules">
+  <link href="<%= atom_path %>" type="application/atom+xml" rel="alternate" title="Latest Titanium Resources">
   <% unless Rails.env == 'production' %>
     <script>
       // Sign JS Github API request with client key and secret in development
@@ -24,8 +24,8 @@
       <div class="row">
         <div class="span4">
           <a class="logo" href="/">
-            A<span class="hilight">ng</span>ular Modules
-            <small>Find <span class="hilight">Modules</span> for AngularJS</small>
+            <span class="hilight">Ti</span> Resources
+            <small>Appcelerator Titanium</small>
           </a>
         </div>
         <div class="span5 search">
@@ -69,10 +69,10 @@
     <div class="container">
       <ul class="nav nav-pills pull-left">
         <%= nav_li controller: "packages", action: ["index", "show"] do %>
-          <%= link_to "Modules", root_url %>
+          <%= link_to "Resources", root_url %>
         <% end %>
         <%= nav_li at: "packages#new" do %>
-          <%= link_to "Submit a Module", new_package_path, class: "new_module" %>
+          <%= link_to "Submit a Resource", new_package_path, class: "new_module" %>
         <% end %>
         <%= nav_li controller: "tags" do %>
           <%= link_to "Tags", tags_path %>
@@ -80,10 +80,10 @@
       </ul>
       <ul class="nav nav-pills pull-right">
         <%= nav_li controller: "blog_posts" do %>
-          <%= link_to "Blog", blog_posts_path %>
+          <%= link_to "Blog", "http://blog.hashapps.com" %>
         <% end %>
         <%= nav_li do %>
-          <%= link_to "Give Feedback", "https://github.com/jimrhoskins/ngmodules.org/issues" %>
+          <%= link_to "Give Feedback", "https://github.com/HashAppsLabs/TiResources/issues" %>
         <% end %>
       </ul>
     </div>
@@ -104,13 +104,13 @@
 
   <div class="footer">
     <div class="container">
-      &copy; <%= Date.today.year %> ngmodules.org 
+      &copy; <%= Date.today.year %> TiResouces 
       |
-      Maintained by <%= link_to "Jim Hoskins", "http://jimhoskins.com" %>
+      Maintained by <%= link_to "HashApps", "http://hashapps.com" %>
       |
       This site is open source. 
-      Get the <%= link_to "source on Github", "https://github.com/jimrhoskins/ngmodules.org" %> or 
-      <%= link_to "report an issue", "https://github.com/jimrhoskins/ngmodules.org/issues" %>.
+      Get the <%= link_to "source on Github", "https://github.com/HashAppsLabs/TiResources" %> or 
+      <%= link_to "report an issue", "https://github.com/HashAppsLabs/TiResources/issues" %>.
 
     </div>
   </div>

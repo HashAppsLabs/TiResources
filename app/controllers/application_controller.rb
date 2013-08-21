@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   check_authorization
   rescue_from CanCan::AccessDenied do |exception|
     if exception.action == :new and exception.subject == Package
-      redirect_to root_url, :alert => "Please sign in to add a new module."
+      redirect_to root_url, :alert => "Please sign in to add a new resource."
     else
       redirect_to root_url, :alert => exception.message
     end

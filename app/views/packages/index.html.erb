@@ -2,7 +2,7 @@
   if params[:query]
     title "Search Results for \"#{params[:query]}\""
   else
-    title "#{params[:sort].titlecase} Modules", hide: true
+    title "#{params[:sort].titlecase} Resources", hide: true
   end
 %>
 
@@ -28,7 +28,7 @@
       <% end %>
     </li>
     <li class="count">
-    <%= Package.count %> modules
+    <%= Package.count %> resources
     </li>
   </ul>
 <% end %>

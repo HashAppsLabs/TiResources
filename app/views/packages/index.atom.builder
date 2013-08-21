@@ -1,5 +1,5 @@
 atom_feed language: 'en-US' do |feed|
-  feed.title "Latest AngularJS Modules"
+  feed.title "Latest Ti Resources"
   @packages.each do |package|
     feed.entry package do |entry|
       entry.url  package_url(package)
