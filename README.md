@@ -1,7 +1,9 @@
-# Ngmodules.org Web Site 
+# tiresources.hashapps.com Web Site 
 
-The primary focus of ngmodules.org is to provide the ability to share
-and discover Angular.js modules.
+This repo is forked from https://github.com/HashAppsLabs/TiResources
+
+The primary focus of tiresources is to provide the ability to share
+and discover Appcelerator Titanium resources.
 
 ## Contributing
 
@@ -22,7 +24,7 @@ This is a ruby on rails application. It has only a few requirements:
 
 Clone the repo
 
-    git clone git://github.com/jimrhoskins/ngmodules.org.git
+    git clone https://github.com/HashAppsLabs/TiResources
     cd ngmodules.org
 
 Install dependencies
