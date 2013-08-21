@@ -1,6 +1,6 @@
 # tiresources.hashapps.com Web Site 
 
-This repo is forked from https://github.com/HashAppsLabs/TiResources
+This repo is forked from https://github.com/jimrhoskins/ngmodules.org
 
 The primary focus of tiresources is to provide the ability to share
 and discover Appcelerator Titanium resources.
